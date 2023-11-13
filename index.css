@@ -113,24 +113,27 @@ body {
 	border-radius: 10px;
 }
 
+.button:hover {
+	background-color: var(--hotmag);
+}
 
-#main-navigation a:hover, [class*="linkedin"]:hover, [class*="github"]:hover {
+
+#main-navigation a:hover, #main-navigation span[class*="linkedin"]:hover, #main-navigation span[class*="github"]:hover {
 	cursor: pointer;
 	color: var(--hotmag);
 }
 
-#main-navigation li:last-child:hover, li:last-child span:hover {
+#main-navigation span:hover {
 	color: var(--white);
-	background-color: var(--hotmag);
 	cursor:pointer;
 }
 
 #contact {
-	
 	font-size: 120%;
 	margin: 0 auto;
 	text-align: center;
 	max-width: 400px;
+	padding-bottom: 12rem;
 }
 
 #contact h3 {
@@ -142,10 +145,45 @@ body {
 	text-decoration: none;
 	padding-top: 1rem;
 }
+footer {
+	max-width: auto;
+	margin: 2rem;
+	font-size: 150%;
+	text-align: center;
+	margin: 0 auto;
+}
 
+footer ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	list-style-type: none;
+}
 
-#contact a span:hover {
-	background-color: var(--hotmag);
+footer ul li span {
+	display: block;
+	padding: 1rem;
+	color: var(--magenta);
+	font-size: 180%;
+}
+
+footer span {
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: var(--white);
+}
+
+footer li span:hover {
+	color: var(--white);
+}
+
+footer p:last-child {
+	font-size: medium;
 }
 
 
@@ -157,5 +195,21 @@ body {
 		flex-basis: auto;
 		text-align: left;
 		margin-right: auto;
+	}
+}
+
+@media(max-width: 400px) {
+	#contact {
+		max-width: auto;
+	}
+	footer {
+		padding: 2rem 0;
+		margin: 0;
+		max-width: auto;
+	}
+	#contact {
+		padding: 2rem 0;
+		margin: 0;
+		max-width: auto;
 	}
 }
