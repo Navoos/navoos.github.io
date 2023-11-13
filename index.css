@@ -66,6 +66,10 @@ body {
   text-decoration: none;
 }
 
+#main-navigation {
+	padding: 0 1rem 0 1rem;
+}
+
 
 #main-navigation ul {
 	padding: 1rem auto;
@@ -102,23 +106,46 @@ body {
 	padding-right: 0.2rem;
 }
 
+.button {
+	color: var(--white);
+	background-color: var(--magenta);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
 
 #main-navigation a:hover, [class*="linkedin"]:hover, [class*="github"]:hover {
 	cursor: pointer;
 	color: var(--hotmag);
 }
 
-
-#main-navigation li:last-child {
-	background-color: var(--magenta);
-	padding: 1rem;
-	border-radius: 10px;
-}
-
 #main-navigation li:last-child:hover, li:last-child span:hover {
 	color: var(--white);
 	background-color: var(--hotmag);
 	cursor:pointer;
+}
+
+#contact {
+	
+	font-size: 120%;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 400px;
+}
+
+#contact h3 {
+	font-size: 140%;
+}
+
+#contact a {
+	display: block;
+	text-decoration: none;
+	padding-top: 1rem;
+}
+
+
+#contact a span:hover {
+	background-color: var(--hotmag);
 }
 
 
