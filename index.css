@@ -199,6 +199,10 @@ footer p:last-child {
 }
 
 @media(max-width: 400px) {
+	#intro h2 {
+		border: 1px solid green;
+		font-size: medium;
+	}
 	#contact {
 		max-width: auto;
 	}
