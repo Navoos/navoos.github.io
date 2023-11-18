@@ -278,12 +278,30 @@ footer p:last-child {
 		margin: 0 auto;
 	}
 	article {
+		border: 1px solid red;
+		padding: 1rem;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 	}
+
 	#projects img {
 		grid-column: 1 / 6;
 		grid-row: 1 / 2;
+	}
+
+	#projects .reverse .text {
+		grid-column: 1 / 9;
+		grid-row: 1 / 2;
+		text-align: left;
+	}
+
+	#projects .reverse img {
+		grid-column: 6 / 11;
+		grid-row: 1 / 2;
+	}
+
+	#projects .reverse ul {
+		justify-content: flex-start;
 	}
 
 	.text {
@@ -294,6 +312,7 @@ footer p:last-child {
 	}
 
 	#projects p {
+		border: 3px solid var(--magenta);
 		text-align: center;
 	}
 
