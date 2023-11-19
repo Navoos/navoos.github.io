@@ -28,14 +28,12 @@ h4 {
 }
 
 body {
-	font-size: 110%;
 	font-family: var(--sans);
   padding: 0;
 	margin: 0;
   background-color: var(--black);
   color: var(--white);
 }
-
 
 #intro  {
 	padding: 4rem 2rem 10rem 1rem;
@@ -51,11 +49,11 @@ body {
 #intro h2 {
 	font-family: var(--mono);
 	color: var(--aqua);
-	font-size: 400%;
+	font-size: 3rem;
 }
 
 #intro h3 {
-	font-size: 300%;
+	font-size: 2rem;
 }
 
 #intro a {
@@ -249,13 +247,23 @@ footer p:last-child {
 	gap: 1.5rem;
 }
 
+
 #projects img {
-	width: 100%;
+	width: 90%;
 	padding: 1rem;
 	border-top: 1px solid var(--aqua);
 	border-left: 1px solid var(--aqua);
 	border-radius: 10px;
 	margin: 1rem;
+}
+
+#projects a {
+	color: var(--magenta);
+}
+
+#projects a:hover {
+	color: var(--hotmag);
+	text-decoration: none;
 }
 
 
@@ -278,12 +286,29 @@ footer p:last-child {
 		margin: 0 auto;
 	}
 	article {
+		padding: 1rem;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 	}
+
 	#projects img {
 		grid-column: 1 / 6;
 		grid-row: 1 / 2;
+	}
+
+	#projects .reverse .text {
+		grid-column: 1 / 9;
+		grid-row: 1 / 2;
+		text-align: left;
+	}
+
+	#projects .reverse img {
+		grid-column: 6 / 11;
+		grid-row: 1 / 2;
+	}
+
+	#projects .reverse ul {
+		justify-content: flex-start;
 	}
 
 	.text {
@@ -294,6 +319,7 @@ footer p:last-child {
 	}
 
 	#projects p {
+		border: 3px solid var(--magenta);
 		text-align: center;
 	}
 
