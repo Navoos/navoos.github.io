@@ -1,5 +1,8 @@
 html {
+	height: 100%;
+	min-height: 100%;
   box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 :root {
   --black: #171321;
@@ -28,11 +31,18 @@ h4 {
 }
 
 body {
+	height: 100%;
+	min-height: 100%;
 	font-family: var(--sans);
   padding: 0;
 	margin: 0;
   background-color: var(--black);
   color: var(--white);
+	
+}
+
+.container {
+	overflow: hidden;
 }
 
 #intro  {
@@ -72,7 +82,7 @@ body {
 
 #main-navigation {
 	margin: 0 auto;
-	padding: 0 1rem 0 1rem;
+	padding: 0 1rem 3rem 1rem;
 }
 
 
@@ -170,9 +180,8 @@ body {
 footer {
 	max-width: auto;
 	margin: 2rem;
-	font-size: 150%;
+	font-size: 1.6rem;
 	text-align: center;
-	margin: 0 auto;
 	padding: 2rem 0;
 }
 
@@ -266,7 +275,61 @@ footer p:last-child {
 	text-decoration: none;
 }
 
+#main-navigation {
+	max-width: 1300px;
+}
 
+#about-me {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+#about-me img {
+	width: 40%;
+}
+
+#about-me h2 {
+	padding: 3rem;
+	font-size: 2rem;
+}
+
+#about-me h3 {
+	padding: 1rem;
+	color: var(--aqua);
+	font-size: 1.6rem;
+}
+
+#about-me h4 {
+	padding: 0.2rem;
+}
+
+#about-me p {
+	text-align: center;
+	background-color: var(--black);
+	border-radius: 10px;
+	padding: 0.8rem;
+	margin: 1rem;
+}
+
+#about-me ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+#about-me img {
+	margin: 1rem;
+	border-top: 2px solid var(--aqua);
+	border-right: 2px solid var(--aqua);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+footer {
+	padding: 3rem;
+	margin: 4rem;
+}
 
 
 @media(min-width: 850px) {
@@ -289,7 +352,9 @@ footer p:last-child {
 		padding: 1rem;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
 	}
+
 
 	#projects img {
 		grid-column: 1 / 6;
@@ -327,6 +392,29 @@ footer p:last-child {
 		justify-content: flex-end;
 		margin-right: 1rem;
 	}
+
+	#about-me ul {
+		justify-content: flex-end;
+	}
+
+	.about-me-wrapper {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+
+	.about-me-wrapper img {
+		grid-column: 1 / 10;
+		grid-row: 1 / 2;
+	}
+
+	.about-me-wrapper .about-me-text {
+		grid-column: 4 / 12;
+		grid-row: 1 / 2;
+		text-align: right;
+		order: 2;
+	}
+
 }
 
 
