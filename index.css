@@ -97,21 +97,21 @@ body {
 }
 
 #main-navigation a {
-	font-size: 110%;
+	font-size: 1.3rem;
 	color: white;
 	text-decoration: none;
 }
 
 #main-navigation span[class*="github"] {
-	font-size: 140%;
+	font-size: 2rem;
 }
 
 #main-navigation span[class*="linkedin"] {
-	font-size: 150%;
+	font-size: 2.1rem;
 }
 
 #main-navigation span[class*="terminal"] {
-	font-size: 60%;
+	font-size: 0.9rem;
 	padding-right: 0.2rem;
 }
 
@@ -155,7 +155,7 @@ body {
 /* ------------------- */
 
 #contact {
-	font-size: 120%;
+	font-size: 1.2rem;
 	margin: 0 auto;
 	text-align: center;
 	max-width: 400px;
@@ -163,7 +163,7 @@ body {
 }
 
 #contact h3 {
-	font-size: 140%;
+	font-size: 1.6rem;
 }
 
 #contact a {
@@ -219,7 +219,7 @@ footer p:last-child {
 #projects h2 {
 	padding: 3rem;
 	margin-bottom: 2rem;
-	font-size: 200%;
+	font-size: 2rem;
 }
 
 #projects h4 {
