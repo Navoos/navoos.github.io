@@ -79,6 +79,14 @@ body {
 	padding: 0 1rem 3rem 1rem;
 }
 
+#main-navigation a {
+	margin-right: 3rem;
+}
+
+#main-navigation h1 {
+	text-align: left;
+}
+
 
 #main-navigation ul {
 	padding: 1rem auto;
@@ -219,7 +227,7 @@ footer p:last-child {
 #projects h2 {
 	padding: 3rem;
 	margin-bottom: 2rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 #projects h4 {
@@ -413,24 +421,4 @@ footer {
 		order: 2;
 	}
 
-}
-
-
-@media(max-width: 400px) {
-	#intro h2 {
-		font-size: medium;
-	}
-	#contact {
-		max-width: auto;
-	}
-	footer {
-		padding: 2rem 0;
-		margin: 0;
-		max-width: auto;
-	}
-	#contact {
-		padding: 2rem 0;
-		margin: 0;
-		max-width: auto;
-	}
 }
