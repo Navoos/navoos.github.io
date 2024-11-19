@@ -1,0 +1,50 @@
+.orbs {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+}
+
+.orb {
+  animation: rotate 25s infinite alternate ease-in-out;
+  transform-origin: 50% 50%;
+  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+}
+.orb path {
+  animation: orb-anim-1 20s infinite alternate ease-in-out;
+  transform-origin: 50% 50%;
+  transform: scale(0.8);
+  transition: fill 800ms ease;
+}
+
+.blob-1 path {
+  fill: var(red);
+  filter: blur(1rem);
+}
+
+@keyframes orb-anim-1 {
+  0% {
+    d: path("M 100 600 q 0 -500, 500 -500 t 500 500 t -500 500 T 100 600 z");
+  }
+  30% {
+    d: path("M 100 600 q -50 -400, 500 -500 t 450 550 t -500 500 T 100 600 z");
+  }
+  70% {
+    d: path("M 100 600 q 0 -400, 500 -500 t 400 500 t -500 500 T 100 600 z");
+  }
+  100% {
+    d: path("M 150 600 q 0 -600, 500 -500 t 500 550 t -500 500 T 150 600 z");
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
